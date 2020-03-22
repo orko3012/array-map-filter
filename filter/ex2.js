@@ -26,7 +26,16 @@ Expected OUTPUT for this sample:
 */
 
 function keepStarks(names) {
+  return names.filter((word)=>word.length<12)
 }
+console.log(keepStarks([
+  'Bran Stark',
+  'Cersei Lannister',
+  'Sandor Clegane',
+  'Arya Stark',
+  'Yara Greyjoy',
+  'Sansa Stark'
+]))
 
 // DON'T TOUCH THIS!
 module.exports = keepStarks;
