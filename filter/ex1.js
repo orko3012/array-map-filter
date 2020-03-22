@@ -6,15 +6,25 @@
 * Return the result of filter
 
 Sample numbers array, i.e. INPUT:
-  [7, -4, 2, 0, -10, 3, 11]
+  
 
 Expected OUTPUT for this sample:
   [7, 2, 0, 3, 11]
 
 */
-
+/*
 function getPositiveNumbers(numbers) {
+  return numbers>=0
 }
+const pricesToCheck = [7, -4, 2, 0, -10, 3, 11];
+const validPrices = pricesToCheck.filter(getPositiveNumbers);
+*/
+function getPositiveNumbers(numbers){
+  return numbers.filter((nb) => nb>=0);
+}
+
+console.log(getPositiveNumbers([7, -4, 2, 0, -10, 3, 11]));
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
